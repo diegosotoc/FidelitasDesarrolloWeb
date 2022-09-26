@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 10px 10px 25px 10px;
+
+  border: solid;
+  border-radius: 5px;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+
+  align-items: flex-end;
+
+  margin-right: 10px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 10px; */
+}
