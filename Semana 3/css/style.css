@@ -1,35 +1,105 @@
+:root {
+  --background: #020a13;
+
+  --sm: 12px;
+  --md: 14px;
+  --lg: 16px;
+  /* color: #B8FFE2;
+  color: #98FBFF;
+  color: #F3F3F3;
+  color: #F6B3B8; */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+}
 
+html {
+  background-color: var(--background);
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
 
-  margin: 10px 10px 25px 10px;
-
-  border: solid;
-  border-radius: 5px;
+  margin: 10px 10px 100px 10px;
+  /* border: solid;
+  border-radius: 5px; */
 }
 
 .navbar li {
   display: inline-block;
-  list-style: none;
-  text-decoration: none;
-
   align-items: flex-end;
-
   margin-right: 10px;
+
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 14px;
 }
 
-.about-me {
+.navbar li a {
+  text-decoration: none;
+}
+
+/* Contenedor principal*/
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-left: 10px; */
+
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.about-me p {
+  padding-top: 10px;
+  font-size: var(--md);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animaciones de la navbar, de @codepen.io */
+a:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+a:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
