@@ -3,12 +3,14 @@
   --black: #000000;
   --gray: #C7C7C7;
   --blue: #00c6ff;
-  --sm: 12px;
+  --dark-gray: #242526;
+  --sm: 14px;
   --md: 16px;
   --lg: 180px;
 }
 
 body {
+  background-color: var(--dark-gray);
   width: 20%;
   font-family: Quicksand;
   color: var(--white);
@@ -21,7 +23,6 @@ header {
   justify-content: space-between;
   align-items: center;
   /* width: 100vh; */
-
   font-size: var(--md);
 }
 
@@ -49,7 +50,6 @@ header :nth-child(3) {
 
   border-style: solid;
 
-  /* color: white; */
   border-color: gray;
   border-width: 2px;
   list-style-image: none;
@@ -113,6 +113,8 @@ footer {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  font-size: var(--sm);
+
 
 
   /* Footer */
