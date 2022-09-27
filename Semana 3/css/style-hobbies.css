@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Me permite utilizar el rem */
+  font-size: 62.5%;
+}
+
+main {
+  /* Centrado del div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main ul {
+  list-style: none;
+}
+
+.hobbies-container {
+  margin-top: 50px;
+  padding: 10px 0px;
+  height: 40vh;
+  width: 75vh;
+}
+
+.hobbies-container ul {
+  /* Las imagenes tienen un cierto espacio entre ellas 
+  por el space evenly */
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  border: 2px solid white;
+  margin-bottom: 50px;
+}
+
+.hobbie {
+  width: 20rem;
+  height: 30rem;
+  margin: 10px 0;
+}
