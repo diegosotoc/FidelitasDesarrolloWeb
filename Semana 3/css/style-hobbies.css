@@ -23,7 +23,7 @@ html {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   height: 10vh;
   width: 100vw;
@@ -42,17 +42,12 @@ header img {
   width: 100px;
 }
 
-.navbar {
-  padding: 1.7vh 1.7vh 0 1.7vh;
-}
-
 .navbar li {
   display: inline-block;
   align-items: flex-end;
-  margin-right: 10px;
+  margin-left: 2rem;
 
   list-style: none;
-  padding-top: 10px;
   padding-bottom: 10px;
 
   font-size: 14px;
