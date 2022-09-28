@@ -30,18 +30,6 @@ header {
   border-radius: 5px;
 }
 
-header img {
-  margin-left: 110px;
-  margin-top: 22px;
-  height: 42px;
-  width: 97px;
-}
-
-.navbar img {
-  height: 100px;
-  width: 100px;
-}
-
 .navbar li {
   display: inline-block;
   align-items: flex-end;
@@ -59,6 +47,7 @@ header img {
   font-size: var(--lg);
 }
 
+/* Body */
 main {
   /* Centrado del div */
   display: flex;
