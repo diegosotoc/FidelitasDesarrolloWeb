@@ -61,7 +61,6 @@ main {
   font-size: 3rem;
 }
 
-
 span {
   color: var(--secondary);
 }
@@ -117,4 +116,18 @@ a:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+/* Animacines de las peliculas/libros */
+.hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hover img:hover {
+
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
