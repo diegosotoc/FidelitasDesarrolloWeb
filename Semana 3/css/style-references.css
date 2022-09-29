@@ -1,10 +1,11 @@
 :root {
   --background: #181a1b;
   --secondary: #52e3c2;
+  --light-gray: #21252b;
 
   --sm: 12px;
   --md: 14px;
-  --lg: 22px;
+  --lg: 20px;
 }
 
 * {
@@ -48,9 +49,6 @@ header {
 
 
 
-
-
-
 /* Tabla */
 table {
   border-collapse: collapse;
@@ -64,20 +62,33 @@ td {
   padding: 0.2%;
 }
 
-.titulo {
+.table {
   background-color: #000000;
   color: #FFFFFF;
 }
 
-.detalle {
-  background-color: #EFEFEF;
+.name {
+  background-color: #181a1b;
   color: #666666;
 }
 
-.detalle:hover {
-  background-color: #DFDFDF;
+.name:hover {
+  background-color: #52e3c173;
   color: #666666;
 }
+
+.title {
+  font-size: 3rem;
+  margin-left: 770px;
+  margin-bottom: 20px;
+  place-self: center;
+}
+
+
+span {
+  color: var(--secondary);
+}
+
 
 /* Animaciones de la navbar, de @codepen.io */
 a:after {
