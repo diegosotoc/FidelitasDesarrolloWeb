@@ -47,7 +47,6 @@ header {
 }
 
 /* Body */
-
 .container {
   display: flex;
   flex-direction: column;
@@ -62,9 +61,6 @@ header {
 .about-me {
   display: flex;
   flex-direction: column;
-
-  /* align-items: center; */
-
   align-content: space-around;
 
   height: 50vh;

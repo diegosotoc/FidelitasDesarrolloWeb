@@ -47,8 +47,6 @@ header {
   font-size: var(--lg);
 }
 
-
-
 /* Tabla */
 table {
   border-collapse: collapse;
@@ -84,11 +82,9 @@ td {
   place-self: center;
 }
 
-
 span {
   color: var(--secondary);
 }
-
 
 /* Animaciones de la navbar, de @codepen.io */
 a:after {
