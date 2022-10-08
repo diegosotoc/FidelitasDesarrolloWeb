@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/header.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,30 +22,55 @@
         < DS />
       </span>
     </p>
+    <div class="ds__navbar-links_container">
+      <p><a href="#">Home</a></p>
+      <p><a href="#">About me</a></p>
+      <p><a href="#">Projects</a></p>
+      <p><a href="#">Technologies</a></p>
+      <button>Contact</button>
+    </div>
   </div>
-  <div class="ds__navbar-links_container">
+
+
+</nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+
+  <div class="ds__navbar-links_container mobile-menu">
     <p><a href="#">Home</a></p>
     <p><a href="#">About me</a></p>
     <p><a href="#">Projects</a></p>
     <p><a href="#">Technologies</a></p>
     <button>Contact</button>
   </div>
-</nav>
+</div>
+
+
 
 <header class=" ds__header section__padding gradient__background" id="Home">
   <div class="ds__header-content">
     <h1 class="gradient__text">
-      I'm Diego Soto, Computer Science Web & Development student.
+      I'm Diego Soto, Computer Science & Web Development student.
     </h1>
     <p>
       Self-learner and tech lover. <br>
       Obsessed minimalism, dark mode implementations, smooth transitions and clean material desing.
     </p>
-    <p>Feel free to contact me: <span> disotocastro@gmail.com.</span> </p>
+    <!-- <p>Feel free to contact me: <span> disotocastro@gmail.com.</span> </p> -->
   </div>
+
+  <figure class="ds__header-image">
+    <img src="./assets/ai.png" alt="main image">
+  </figure>
+
 </header>
 
+
 <body class="gradient__background">
+  <script src="index.js"></script>
 
 </body>
 
