@@ -1,0 +1,17 @@
+.ds__navbar li {
+  display: inline-block;
+  align-items: flex-end;
+  margin-left: 2rem;
+
+  list-style: none;
+  padding-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.ds__navbar li a {
+  padding: 0 1vh;
+  text-decoration: none;
+  font-size: var(--lg);
+}

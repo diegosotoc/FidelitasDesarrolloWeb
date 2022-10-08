@@ -1,0 +1,45 @@
+.ds__projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  margin-bottom: 6rem;
+}
+
+.ds__projects-mobile{
+  display: flex;
+  align-items: row;
+}
+
+.ds__projects-mobile img {
+  width: 330px;
+  height: 650px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.ds__projects-mobile__mobile h3{
+  font-size: 2.5rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+ul {
+  list-style: none;
+}
+
+
+h2 {
+  font-size: 4rem;
+}
+
+
+span {
+  color: var(--secondary);
+}

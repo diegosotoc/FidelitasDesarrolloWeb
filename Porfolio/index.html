@@ -6,44 +6,114 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/projects.css">
+
+  <!-- <link rel="stylesheet" href="./css/projects.css">
+  <link rel="stylesheet" href="./css/skills.css">
+  <link rel="stylesheet" href="./css/contact.css"> -->
   <title>Diego Soto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<header>
-  <ul class="navbar">
-    <li><a href="hobbies.html" target="" rel="Hobbies">
-        <p>Hobbies</p>
-      </a></li>
-    <li><a href="places.html" target="" rel="Places">
-        <p>Places</p>
-      </a></li>
-    <li><a href="references.html" target="" rel="References">
-        <p>References</p>
-      </a></li>
+<nav class="ds__navbar">
+  <ul>
+    <li>
+      <a href="hobbies.html" target="#" rel="Home">
+        <p>Home</p>
+      </a>
+    </li>
+    <li>
+      <a href="references.html" target="#" rel="Projects">
+        <p>Projects</p>
+      </a>
+    </li>
+    <li>
+      <a href="places.html" target="#" rel="Skills">
+        <p>Skills</p>
+      </a>
+    </li>
+    <li>
+      <a href="places.html" target="#" rel="Contact me">
+        <p>Contact me</p>
+      </a>
+    </li>
   </ul>
-</header>
+</nav>
 
-<body>
-  <div class="container">
-    <div class="about-me">
+<header>
+  <div class="ds__aboutMe">
+    <div class="ds__aboutMe-container">
       <h1>I'm Diego Soto.</h1>
       <h2>CS<span>/</span>Web Development student.</h2>
       <p>
         Self-learner and tech lover. <br>
         Obsessed minimalism, dark mode implementations, smooth transitions and clean material desing.
       </p>
-      <p>Feel free to contact me: <span> disotocastro@gmail.com.</span> </p>
-      <p>Check out my personal information!</p>
+      <p class="ds__aboutMe-contact">Let's get in touch!</p>
     </div>
   </div>
+</header>
+
+<body>
+  <div class="ds__projects">
+    <h2 class="title">
+      <span>
+        < </span>
+          Projects
+
+          <span> / </span> >
+    </h2>
+
+    <div class="ds__projects-mobile">
+      <div class="ds__projects-mobile__mobile">
+        <h3>To-Do App!</h3>
+        <img class="todoApp-img" src="./img/img-todoApp1.jpeg" alt="place-cdmx">
+        <img class="todoApp-img" src="./img/img-todoApp2.jpeg" alt="place-cdmx">
+      </div>
+      <div class="ds__projects-mobile__mobile">
+        <h3>Spotify Music Fest</h3>
+        <img class="todoApp-img" src="./img/img-spotify.jpeg" alt="">
+        <img class="todoApp-img" src="./img/img-spotify2.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+
 </body>
 
-<footer>
+
+
+
+
+
+<!-- <body>
+  <div class="ds__projects">
+    <div class="ds__projects-container">
+
+      <div class="ds__projects-project todoApp">
+        <img src="./img/img-todoApp1.jpeg" alt="To-Do List!">
+        <img src="./img/img-todoApp2.jpeg" alt="To-Do List!">
+      </div>
+
+      <div class="ds__projects-project">
+        <img src="./" alt="To-Do List!">
+        <h3>To-Do List!</h3>
+      </div>
+
+      <div class="ds__projects-project">
+        <img src="./" alt="To-Do List!">
+        <h3>To-Do List!</h3>
+      </div>
+
+    </div>
+  </div>
+
+</body> -->
+
+<!-- <footer>
   <div class="contact-me">
 
     <a href="https://twitter.com/disotocastro" target="_blank" rel="noopener noreferrer"><img
@@ -54,7 +124,7 @@
     <a href="https://linkedin.com/in/disotocastro
     " target="_blank" rel="noopener noreferrer"><img src="./img/logo-linkedin.png" alt=""></a>
   </div>
-</footer>
+</footer> -->
 
 </html>
 

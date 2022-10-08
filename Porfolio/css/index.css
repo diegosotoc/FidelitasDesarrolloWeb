@@ -16,61 +16,6 @@ html {
   font-size: 62.5%;
 }
 
-/* Body */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  height: 80vh;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-
-  height: 50vh;
-  margin: 10vh 0vh;
-
-}
-
-.about-me h1 {
-  font-size: 7rem;
-
-}
-
-.about-me h2 {
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-  font-size: 6rem;
-}
-
-.about-me h2 span {
-  color: var(--secondary);
-}
-
-.about-me p {
-  /* padding-top: 1vh; */
-  font-size: 2rem;
-
-}
-
-.about-me p span {
-  color: var(--secondary);
-}
-
-.about-me p:nth-child(5) {
-  margin-top: 4vh;
-  border-radius: 8px;
-  padding: 1vh;
-  width: 40%;
-  color: var(--secondary);
-  border: #52e3c2 solid;
-}
 
 /* Footer */
 .contact-me {

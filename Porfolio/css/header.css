@@ -1,26 +1,74 @@
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex: row;
 
-  height: 10vh;
-  width: 100vw;
-  border-radius: 5px;
+  margin-bottom: 12rem;
 }
 
-.navbar li {
-  display: inline-block;
-  align-items: flex-end;
-  margin-left: 2rem;
 
-  list-style: none;
-  padding-bottom: 10px;
-
-  font-size: 20px;
-  line-height: 20px;
+/* Body */
+.ds__aboutMe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.navbar li a {
-  padding: 0 1vh;
-  text-decoration: none;
-  font-size: var(--lg);
+.ds__aboutMe-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+  height: 50vh;
+  margin: 0px;
+}
+
+.ds__aboutMe-container h1{
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.04rem;
+  font-family: 'Manrope', sans-serif !important;
+
+}
+
+.ds__aboutMe-container h2 {
+  margin-top: .4rem;
+  margin-bottom: 1rem;
+  font-size: 62px;
+
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.04rem;
+}
+
+.ds__aboutMe-container h2 span {
+  color: var(--secondary);
+}
+
+.ds__aboutMe-container p {
+  /* padding-top: 1vh; */
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.ds__aboutMe-container p span {
+  color: var(--secondary);
+}
+
+.ds__aboutMe-contact {
+  margin-top: 1.5vh;
+  border-radius: 8px;
+  padding: 1vh;
+  width: 25%;
+  color: var(--secondary);
+  border: #52e3c2 solid;
+  cursor: pointer;
+}
+.ds__aboutMe-contact:hover{
+  color: white;
 }
