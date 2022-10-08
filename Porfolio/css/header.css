@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: center;
+
+  height: 10vh;
+  width: 100vw;
+  border-radius: 5px;
+}
+
+.navbar li {
+  display: inline-block;
+  align-items: flex-end;
+  margin-left: 2rem;
+
+  list-style: none;
+  padding-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.navbar li a {
+  padding: 0 1vh;
+  text-decoration: none;
+  font-size: var(--lg);
+}
