@@ -16,6 +16,13 @@ html {
   font-size: 62.5%;
 }
 
+
+
+/* Reponsive desing */
+
+
+
+
 /* Animaciones de la navbar, de @codepen.io */
 a:after {
   content: '';
@@ -36,4 +43,11 @@ a:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+@media(min-width: 768px){
+  .ds__aboutMe {
+    height: 40vh;
+    margin-left: 32px;
+}
 }
