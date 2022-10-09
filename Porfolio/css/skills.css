@@ -15,7 +15,7 @@
   margin-top: 3rem;
   margin-bottom: 40rem;
   padding: 10px 0px;
-  height: 40vh;
+  height: 20rem;
   width: 75vh;
 }
 
@@ -23,15 +23,12 @@
   /* Las imagenes tienen un cierto espacio entre ellas 
   por el space evenly */
   display: flex;
-  flex-direction: row;
-  align-content: stretch;
-  align-items: stretch;
+  /* align-content: stretch;
+  align-items: stretch; */
   justify-content: space-evenly;
-  flex-wrap: wrap;
-
   border-radius: 25px;
   background-color: var(--light-gray);
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .hobbie {
