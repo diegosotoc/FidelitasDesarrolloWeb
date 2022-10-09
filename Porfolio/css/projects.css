@@ -14,7 +14,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 3rem;
-
 }
 
 .ds__projects-mobile img {
@@ -24,10 +23,17 @@
   margin-left: 10px;
 }
 
-.ds__projects-mobile__mobile h3{
+.textProject{
   font-size: 2.5rem;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+.ds__projects-desktop{
+  margin-top: 50px;
+}
+.ds__projects-desktop img{
+  width: 800px;
+  height: 520px;
 }
 
 

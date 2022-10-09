@@ -1,0 +1,81 @@
+.ds__contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+    margin-top: 10px;
+
+}
+
+.ds__contact-card{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+
+  width: 600px;
+  height: 300px;
+
+  background: black;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.ds__contact-card img{
+  width: 275px;
+  height: 300px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.ds__contact-info p{
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: black;
+  font-size: 2rem;
+
+  line-height: 1cm;
+}
+
+.ds__contact-info span{
+  background-color: black;
+  font-size: 2rem;
+}
+
+.ds__info{
+  height: 10px !important;
+}
+
+.ds__contactText{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 35vh;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.ds__contact-container{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+  height: 10vh;
+  margin: 0px;
+}
+
+.ds__contact-container h1{
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.04rem;
+}
+
+.ds__contact-container h2 {
+  margin-top: .4rem;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.04rem;
+}

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/projects.css">
   <link rel="stylesheet" href="./css/skills.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,26 +22,31 @@
 
 <nav class="ds__navbar" id="navbar">
   <ul>
+
     <li>
-      <a href="hobbies.html" target="#" rel="Home">
+      <a href="#" rel="Home">
         <p>Home</p>
       </a>
     </li>
+
     <li>
-      <a href="references.html" target="#" rel="Projects">
+      <a href="#ds__pr" rel="Projects">
         <p>Projects</p>
       </a>
     </li>
+
     <li>
-      <a href="places.html" target="#" rel="Skills">
+      <a href="#ds__skills" rel="Skills">
         <p>Skills</p>
       </a>
     </li>
+
     <li>
-      <a href="places.html" target="#" rel="Contact me">
-        <p>Contact me</p>
+      <a href="#ds__foo" rel="Contact">
+        <p>Contact</p>
       </a>
     </li>
+
   </ul>
 </nav>
 
@@ -67,8 +73,7 @@
 </header>
 
 <body>
-
-  <div class="ds__projects">
+  <div id="ds__pr" name="ds__pr" class="ds__projects">
     <h2 class="ds__projects-title">
       <span>
         < </span>
@@ -79,19 +84,24 @@
 
     <div class="ds__projects-mobile">
       <div class="ds__projects-mobile__mobile">
-        <h3>To-Do App!</h3>
-        <img class="todoApp-img" src="./img/img-todoApp1.jpeg" alt="place-cdmx">
-        <img class="todoApp-img" src="./img/img-todoApp2.jpeg" alt="place-cdmx">
+        <h3 class="textProject">To-Do App!</h3>
+        <img class="todoApp-img" src="./img/img-todoApp1.jpeg">
+        <img class="todoApp-img" src="./img/img-todoApp2.jpeg">
       </div>
+
       <div class="ds__projects-mobile__mobile">
-        <h3>Spotify Music Fest</h3>
-        <img class="todoApp-img" src="./img/img-spotify.jpeg" alt="">
-        <img class="todoApp-img" src="./img/img-spotify2.jpeg" alt="">
+        <h3 class="textProject">YardSale</h3>
+        <img class="todoApp-img" src="./img/img-yard1.png">
+        <img class="todoApp-img" src="./img/img-yard2.png">
       </div>
+    </div>
+    <div class="ds__projects-desktop">
+      <h3 class="textProject txtSpotify">Spotify: ForeverYoungFest</h3>
+      <img class="todoApp-img" src="./img/img-spotify.png">
     </div>
   </div>
 
-  <div class="ds__skills">
+  <div name="ds__skills" id="ds__skills" class="ds__skills">
 
     <h2 class="ds__skills-tittle">
       <span>
@@ -100,32 +110,53 @@
 
     <div class="ds__skills-hobbies-container">
       <ul>
-        <li class="hover"><img class="hobbie" src="./img/skill-html.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-css.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-js.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-react.png" alt="movie-zodiac"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-html.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-css.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-js.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-react.png"></li>
       </ul>
 
       <ul>
-        <li class="hover"><img class="hobbie" src="./img/skill-java.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-cpp.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-node.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-sql.png" alt="movie-darko"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-java.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-cpp.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-node.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-sql.png"></li>
       </ul>
+
       <ul>
-        <li class="hover"><img class="hobbie" src="./img/skill-git.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-linux.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-bash.png" alt="movie-darko"></li>
-        <li class="hover"><img class="hobbie" src="./img/skill-ps.png" alt="movie-darko"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-git.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-linux.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-bash.png"></li>
+        <li class="hover"><img class="hobbie" src="./img/skill-ps.png"></li>
       </ul>
     </div>
   </div>
 
+
+  <div id="ds__cnt" name="ds__cnt" class="ds__contact">
+    <div class="ds__contactText">
+      <div class="ds__contact-container">
+        <h1>Wanna contact me?</h1>
+        <h2>Here's my information</h2>
+      </div>
+    </div>
+    <div class="ds__contact-card">
+      <img src="./img/contact.jpeg" alt="Developer">
+      <div class="ds__contact-info">
+        <p>Name: <span>Diego Soto</span> </p>
+        <p>E-Mail: <span> disotocastro@gmail.com</span> </p>
+        <p>City: <span> San José, Costa Rica</span> </p>
+        <p>Languages: <span> English & Spanish</span> </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
 </body>
 
 
-
-<footer>
+<footer id="ds__foo" name="ds__foo">
   <div class="contact-me">
     <a href="https://twitter.com/disotocastro" target="_blank" rel="noopener noreferrer"><img
         src="./img/logo-twitter.png" alt=""></a>
@@ -140,11 +171,3 @@
 <script src="index.js"></script>
 
 </html>
-
-
-<!-- Instrucciones
-1. Información personal.
-2. Fotos de lugares turísticos, 
-3. imágenes e información de sus libros / películas favoritas 
-4. una tabla e información de 10 de sus contactos (nombre, teléfono, correo y dirección física)
- -->

@@ -28,6 +28,8 @@ a:after {
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
   color: var(--secondary);
+
+  cursor: pointer;
 }
 
 a:hover:after {
