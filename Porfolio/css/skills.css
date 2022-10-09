@@ -5,20 +5,21 @@
   flex-direction: column;
 }
 
-.title {
+.ds__skills-tittle{
   font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
 
-.hobbies-container {
-  margin-top: 1rem;
+.ds__skills-hobbies-container {
+  margin-top: 3rem;
+  margin-bottom: 40rem;
   padding: 10px 0px;
   height: 40vh;
   width: 75vh;
 }
 
-.hobbies-container ul {
+.ds__skills-hobbies-container ul {
   /* Las imagenes tienen un cierto espacio entre ellas 
   por el space evenly */
   display: flex;

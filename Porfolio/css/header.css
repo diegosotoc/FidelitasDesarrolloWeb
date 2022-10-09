@@ -3,12 +3,10 @@ header {
   justify-content: center;
   align-items: center;
   flex: row;
-
+  margin-top: 10rem;
   margin-bottom: 12rem;
 }
 
-
-/* Body */
 .ds__aboutMe {
   display: flex;
   justify-content: flex-start;
@@ -32,8 +30,6 @@ header {
   font-size: 7rem;
   line-height: 7.5rem;
   letter-spacing: -0.04rem;
-  font-family: 'Manrope', sans-serif !important;
-
 }
 
 .ds__aboutMe-container h2 {
@@ -51,7 +47,6 @@ header {
 }
 
 .ds__aboutMe-container p {
-  /* padding-top: 1vh; */
   line-height: 3rem;
   font-size: 2rem;
 }
@@ -64,11 +59,12 @@ header {
   margin-top: 1.5vh;
   border-radius: 8px;
   padding: 1vh;
-  width: 25%;
+  width: 19rem;
   color: var(--secondary);
   border: #52e3c2 solid;
   cursor: pointer;
 }
+
 .ds__aboutMe-contact:hover{
   color: white;
 }
