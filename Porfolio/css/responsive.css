@@ -1,4 +1,4 @@
-
+/* 
 @media(max-width: 1141px){ 
   .ds__aboutMe {
     height: 50vh;
@@ -78,14 +78,113 @@
     border-radius: 8px;
     margin-left: 14px;
   }
-}
+} */
 
 
 @media(max-width: 450px) {
-  .ds__projects-mobile img {
-    width: 270px;
-    height: 529px;
-    border-radius: 8px;
-    margin-left: 14px;
+  ul {
+    list-style: none;
+    width: 100%;
   }
+  .sticky {
+    width: auto;
+  }
+  header{
+    margin-top: 10rem;
+    margin-bottom: 25rem;
+  }
+
+  .ds__aboutMe {
+    height: 50vh;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .ds__aboutMe-container h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.04rem;
+    margin-right: 0;
+
+}
+  .ds__aboutMe-container h2{
+    font-size: 35px;
+    line-height: 35px;
+    margin-top: -1.6rem;
+
+  }
+
+  .ds__aboutMe-container p {
+    font-size: 16px;
+}
+
+  .ds__projects-title {
+    margin-top: 10rem;
+  } 
+
+  .ds__projects-mobile__mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .ds__projects-mobile img {
+    width: 300px;
+    height: 600px;
+  }
+
+  .ds__projects-desktop img {
+    width: 36rem;
+    height: 21rem;
+}
+.textProject {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hobbie {
+  border-radius: 10px;
+  width: 6rem;
+  height: 6rem;
+  margin: 2rem 12px;
+}
+.ds__skills-hobbies-container {
+  width: 44vh;
+}
+.ds__contact-container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.04rem;
+}
+.ds__contact-container h2 {
+  margin-top: -1.6rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  line-height: 39px;
+
+}
+.ds__contactText {
+  margin-top: -140px;
+}
+.ds__contact-card {
+  width: 476px;
+  height: 200px;
+}
+.ds__contact-card img {
+  width: 198px;
+  height: 200px;
+  border-radius: 10px 0px 0px 10px;
+}
+.ds__contact-info span {
+  background-color: black;
+  font-size: 1.5rem;
+}
+.ds__contact-info p {
+  font-size: 1.5rem;
+}
 }
