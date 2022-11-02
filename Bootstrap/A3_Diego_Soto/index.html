@@ -12,9 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/card.css">
-  <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
 
   <title>BS para todos</title>
 </head>
@@ -30,8 +28,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 text-center md-pt-4 pb-4 ">
-          <h1 class="mt-4">Layaouts en CSS Bootstrap</h1>
-          <img class="center-block" src="./assets//icons-hero.png" alt="">
+          <h1 class="col-6 offset-3 mt-4 p-3">Layaouts en CSS Bootstrap</h1>
+          <img class="bs__img center-block" src="./assets/icons-hero.png" alt="">
         </div>
       </div>
     </div>
@@ -42,19 +40,18 @@
     <div id="card" class="container-fluid">
       <div class="row">
 
-        <div class="hero__container col-12 col-sm-6">
-          <img class="hero__code p-4" src="./assets/carbon.png" alt="BS Logo" />
+        <div class="hero__container col-12 col-md-6 text-center">
+          <img class="card__code p-4" src="./assets/carbon.png" alt="BS Logo" />
         </div>
 
-        <div class="col-12 col-sm-6 md-pt-4 pb-4">
+        <div class="card__text col-12 col-md-6 mb-4">
           <h2 class="mt-4">
             Grid system
           </h2>
           <p>
-            Honolulu es la capital y localidad más grande del estado de Hawái, en los Estados Unidos.
-            Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
-            se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
-            formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).
+            El Grid System o "Modelo de Grillas" de Bootstrap consta de 12 columnas idénticas
+            que nos permiten poder acomodar el cóntenido de una página web de una manera más fácil
+            y de manera responsiva.
           </p>
           <a class="card__link btn btn-outline-light" href="https://getbootstrap.com/docs/5.1/layout/grid/"
             target="_blank" rel="noopener noreferrer">Conocer más</a>
@@ -65,21 +62,27 @@
     <div id="card" class="container-fluid">
       <div class="row">
 
-        <div class="hero__container col-12 col-sm-6">
-          <img class="hero__code p-4" src="./assets/carbon.png" alt="BS Logo" />
+        <div class="hero__container col-12 col-md-6 text-center">
+          <img class="card__code p-4" src="./assets/carbon.png" alt="BS Logo" />
         </div>
 
-        <div class="col-12 col-sm-6 md-pt-4 pb-4">
+        <div class="card__text col-12 col-md-6 mb-4">
           <h2 class="mt-4">
             Containers
           </h2>
           <p>
-            Honolulu es la capital y localidad más grande del estado de Hawái, en los Estados Unidos.
-            Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
-            se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
-            formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).
+            Los "containers" o contenedores son un bloque de construcción fundamental de Bootstrap.
+            La función de un container es contener, rellenar o alinear contenido. <br>
+            Bootstrap viene con tres contenedores diferentes: <br>
+            <br>
+            <b>Básico: </b> Su max-width cambia en cada breakpoint.
+            <br>
+            <b>Fluido:</b> Abarca todo el ancho completo del viewport.
+            <br>
+            <b>Responsive: </b>clase que tiene un 100% de ancho hasta que se
+            alcanza el breakpoint especificado.
           </p>
-          <a class="card__link btn btn-outline-light" href="https://getbootstrap.com/docs/5.1/layout/grid/"
+          <a class="card__link btn btn-outline-light" href="https://getbootstrap.com/docs/5.1/layout/containers/"
             target="_blank" rel="noopener noreferrer">Conocer más</a>
         </div>
       </div>

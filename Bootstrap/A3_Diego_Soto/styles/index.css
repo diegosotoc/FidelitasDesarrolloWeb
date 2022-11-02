@@ -4,7 +4,42 @@
   margin: 0px;
 }
 
+/* Header */
 .bs__icon {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.bs__img {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* Body */
+
+#card {
+  background-color: #343a40;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.card__code {
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-radius: 44px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: #7310f6;
+  border-radius: 100px;
+}
+
+/* Footer */
+#footer {
+  background: radial-gradient(circle at 50% 50%, rgba(33, 37, 41, 1) 0%, rgba(52, 58, 64, 1) 100%);
+  color: white;
 }
