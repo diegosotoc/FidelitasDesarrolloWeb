@@ -5,6 +5,10 @@
 }
 
 /* Header */
+.navbar {
+  background: radial-gradient(circle at 50% 50%, rgba(33, 37, 41, 1) 0%, rgba(52, 58, 64, 1) 100%);
+}
+
 .bs__icon {
   margin-left: 10px;
   margin-right: 10px;
@@ -42,4 +46,8 @@ h1 {
 #footer {
   background: radial-gradient(circle at 50% 50%, rgba(33, 37, 41, 1) 0%, rgba(52, 58, 64, 1) 100%);
   color: white;
+}
+
+#footer a {
+  color: aliceblue;
 }
