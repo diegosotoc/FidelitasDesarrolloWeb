@@ -1,3 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/nirvana');
+
+body {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 100%);
+}
+
+h1 {
+  color: white;
+  font-family: 'Nirvana', sans-serif;
+  letter-spacing: 5px;
+
+}
+
 .ds__banner {
   width: 300px;
   height: 875px;
