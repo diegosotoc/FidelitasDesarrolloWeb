@@ -15,3 +15,29 @@ h1 {
   width: 300px;
   height: 875px;
 }
+
+.accordion-button {
+  background-color: #323232;
+  color: white;
+}
+
+.accordion-collapse {
+  background-color: #585858 !important;
+  border: none;
+  color: white;
+
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #323232;
+  color: white;
+
+}
+
+.accordion-button:focus {
+  box-shadow: none
+}
+
+a {
+  color: white;
+}
