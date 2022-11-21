@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  <!-- 
+    Calculadora
+   -->
+  <h1>Calculadora</h1>
+  <label for="">Numero 1</label>
+  <input type="number" id="num1"><br>
+  <label for="">Numero 2</label>
+  <input type="number" id="num2"><br>
+
+  <button onclick="sumar()">Sumar</button>
+  <button onclick="restar()">restar</button>
+  <button onclick="multiplicar()">multiplicar</button>
+  <button onclick="dividir()">dividir</button>
+  <h1 id="resultado"> </h1>
+
+  <h1>Datos personales</h1>
+
+  <label for="">Ingrese su nombre</label>
+  <input type="text" id="nombre"><br>
+  <label for="">Ingrese su apellido</label>
+  <input type="text" id="apellido"><br>
+
+  <!-- 
+    Datos personales
+   -->
+  <button onclick="datosPersonales()">Mostrar datos personales</button>
+  <h1 id="datos-personales"></h1>
+
+  <!-- Total a pagar -->
+
+  <h1>Producto</h1>
+  <label for="nombre-producto">Nombre del producto</label>
+  <input type="text" id="nombre-producto"><br>
+
+  <label for="precio-producto">Precio producto</label>
+  <input type="number" id="precio-producto"><br>
+  <label for="cantidad-producto">Cantidad comprada</label>
+  <input type="number" id="cantidad-producto"><br>
+
+  <button onclick="calcularPrecio()">Calcular</button>
+  <h1 id="resultado-producto"> </h1>
+
+
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
