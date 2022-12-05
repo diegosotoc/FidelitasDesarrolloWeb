@@ -36,6 +36,8 @@ var numero = parseInt(prompt("Ingrese un numero"));
 
 if (numero === 10) {
   document.write(`El número ${numero} es igual a 10.`)
+} else if (numero > 10) {
+  document.write(`El número ${numero} mayor a 10.`)
 } else {
   if (numero % 2 !== 0 && numero < 10) {
     document.write(`El número ${numero} es un número impar menor a 10.`);

@@ -31,8 +31,9 @@ function dividir() {
 function datosPersonales() {
   let nombre = document.getElementById("nombre").value;
   let apellido = document.getElementById("apellido").value;
-  document.getElementById('datos-personales').innerHTML = `<h3>Su nombre es = ${nombre} ${apellido}</h3>`
+  document.getElementById('datos-personales').innerHTML = `<h3>Su nombre es: ${nombre} ${apellido}</h3>`
 }
+
 // Producto
 function calcularPrecio() {
   let cantidadProducto = document.getElementById("cantidad-producto").value;
@@ -41,5 +42,5 @@ function calcularPrecio() {
 
   let suma = Number(cantidadProducto) * Number(precioProducto);
 
-  document.getElementById('resultado-producto').innerHTML = `<h3>El total a pagar por ${nombreProducto} es ${suma}</h3>`
+  document.getElementById('resultado-producto').innerHTML = `<h3>El total a pagar por: ${nombreProducto} es de: ${suma}</h3>`
 }
