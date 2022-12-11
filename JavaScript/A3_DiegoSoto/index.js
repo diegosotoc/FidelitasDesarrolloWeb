@@ -1,21 +1,28 @@
 // Ejercicio 1
 
-var angulo1, angulo2, angulo3
+var angulo1, angulo2, angulo3, total
 
 for (let i = 0; i < 10; i++) {
   angulo1 = parseInt(prompt("Cuál es la medida del primer ángulo?"))
   angulo2 = parseInt(prompt("Cuál es la medida del segundo ángulo?"))
   angulo3 = parseInt(prompt("Cuál es la medida del tercer ángulo?"))
 
-  if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
-    alert("Es un acutángulo")
-  }
-  if (angulo1 === 90 || angulo2 === 90 || angulo3 === 90) {
-    alert("Es un rectángulo")
-  }
+  total = angulo1 + angulo2 + angulo3
 
-  if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90) {
-    alert("Es un Obtusangulo")
+  if (total != 180) {
+    alert("No ha ingresado un triangulo")
+  } else {
+    if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
+      alert("Es un acutángulo")
+    }
+
+    if (angulo1 === 90 || angulo2 === 90 || angulo3 === 90) {
+      alert("Es un rectángulo")
+    }
+
+    if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90) {
+      alert("Es un Obtusangulo")
+    }
   }
 }
 
