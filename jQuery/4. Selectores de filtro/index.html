@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <p id="parrafo1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam nemo saepe quisquam illo quidem inventore
+    aspernatur facilis, iure, maxime quos laudantium tempora, facere ipsam adipisci nostrum sequi exercitationem
+    ratione.
+  </p>
+  <p id="parrafo">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam nemo saepe quisquam illo quidem inventore
+    aspernatur facilis, iure, maxime quos laudantium tempora, facere ipsam adipisci nostrum sequi exercitationem
+    ratione.
+  </p>
+  <p id="parrafo">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam nemo saepe quisquam illo quidem inventore
+    aspernatur facilis, iure, maxime quos laudantium tempora, facere ipsam adipisci nostrum sequi exercitationem
+    ratione.
+  </p>
+
+
+
+
+  <script type="text/javascript">
+    // Filtra por número de parrafo, empieza desde 0.
+    $("p").eq(1).css({
+      "font-family": "verdana"
+    })
+
+    // Primero
+    $("p").first().css({
+      "font-family": "verdana"
+    })
+
+    // Segundo
+    $("p").last().css({
+      "font-family": "verdana"
+    })
+
+    // Filtrado
+    $("p").filter("#parrafo1").css({
+      "background": "red"
+    })
+
+    // Not
+    // Todos menos el que no
+    $("p").not("#parrafo1").css({
+      "background": "blue"
+    })
+
+
+  </script>
+
+</body>
+
+</html>
