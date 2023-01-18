@@ -33,6 +33,11 @@
 
     // ^ -> Si lo siguienta empieza con el valor 'P'... haga esto, caseSensitive
     $("input[value^='P']").css({ "color": "red" })
+    // Si input tiene y name, aplique los atributos del CSS...
+    $("input[value][name]").css({ "color": "red" })
+
+    // Se puede ser mas especifico.
+    $("input[value='...'][name='...']").css({ "color": "red" })
 
   </script>
 
