@@ -19,23 +19,38 @@
       <li class="list_item"><a href="#">Home</a></li>
       <li class="list_item"><a href="#">About</a></li>
       <li class="list_item"><a href="#">Contact</a></li>
-      <li class="list_item"><a href="#">Getting started</a></li>
+      <li class="list_item"><a href="#">Info</a></li>
     </ul>
   </div>
 
+  <label for="">Info about our clients</label>
 
-  <label for=""></label>
-
-  <blockquote id="creator">Citio Web creado por Diego Soto</blockquote>
 
   <table>
-    <th>Hola</th>
     <tr>
-      <td>asdsd</td>
+      <th class="th">Company</th>
+      <th class="th">Contact</th>
+      <th class="th">Country</th>
+    </tr>
+    <tr>
+      <td class="td">Alfreds Futterkiste</td>
+      <td class="td">Maria Anders</td>
+      <td class="td">Germany</td>
+    </tr>
+    <tr>
+      <td class="td">Centro comercial Moctezuma</td>
+      <td class="td">Francisco Chang</td>
+      <td class="td">Mexico</td>
+    </tr>
+    <tr>
+      <td class="td">Skyline</td>
+      <td class="td">Javier Jong</td>
+      <td class="td">Canada</td>
     </tr>
   </table>
 
-  <p></p>
+  <blockquote id="creator">Developer Diego Soto</blockquote>
+  <p>© All rights reserved</p>
 
   <script type="text/javascript">
 
@@ -43,6 +58,7 @@
       "display": "flex",
       "width": "fit",
       "background-color": "black",
+      "margin-bottom": "15px"
     })
 
     $("ul").css({
@@ -56,12 +72,39 @@
       "text-decoration": "none",
     })
     $("a:odd").css({
-      "color": "white",
+      "color": "white"
+    })
+
+    $("label").css({
+      "font-style": "italic",
     })
 
     $("#creator").css({
       "font-style": "italic"
     })
+
+    $("table").css({
+      "border-collapse": "collapse",
+      "width": "100 %",
+      "margin-top": "10px"
+    })
+
+    $("td").css({
+      "border": "10px solid #DDDDDDD",
+      "text-align": "left",
+      "padding": "8px"
+    })
+
+    $("th").css({
+      "border": "10px",
+      "text-align": "left",
+      "padding": "8px"
+    })
+
+    $("tr:even").css({
+      "background-color": "#dddddd",
+    })
+
 
   </script>
 
