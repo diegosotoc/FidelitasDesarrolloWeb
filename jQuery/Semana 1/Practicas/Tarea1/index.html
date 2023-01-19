@@ -14,29 +14,54 @@
 
 <body>
 
-  <div>
-
+  <div class="container">
+    <ul>
+      <li class="list_item"><a href="#">Home</a></li>
+      <li class="list_item"><a href="#">About</a></li>
+      <li class="list_item"><a href="#">Contact</a></li>
+      <li class="list_item"><a href="#">Getting started</a></li>
+    </ul>
   </div>
 
-  <li></li>
-
-  <a href=""></a>
 
   <label for=""></label>
 
-  <blockquote></blockquote>
+  <blockquote id="creator">Citio Web creado por Diego Soto</blockquote>
 
   <table>
-    <th></th>
-    <tr></tr>
-    <td></td>
+    <th>Hola</th>
+    <tr>
+      <td>asdsd</td>
+    </tr>
   </table>
 
   <p></p>
 
   <script type="text/javascript">
 
+    $(".container").css({
+      "display": "flex",
+      "width": "fit",
+      "background-color": "black",
+    })
 
+    $("ul").css({
+      "display": "flex",
+      "flex-direction": "colum",
+      "list-style-type": "none",
+      "gap": "10px",
+    })
+
+    $("a").css({
+      "text-decoration": "none",
+    })
+    $("a:odd").css({
+      "color": "white",
+    })
+
+    $("#creator").css({
+      "font-style": "italic"
+    })
 
   </script>
 
