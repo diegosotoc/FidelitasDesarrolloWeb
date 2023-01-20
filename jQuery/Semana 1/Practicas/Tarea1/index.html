@@ -14,16 +14,16 @@
 
 <body>
 
-  <div class="container">
+  <div id="id_container" class="container">
     <ul>
-      <li class="list_item"><a href="#">Home</a></li>
+      <li id="home" class="list_item"><a href="#">Home</a></li>
       <li class="list_item"><a href="#">About</a></li>
       <li class="list_item"><a href="#">Contact</a></li>
       <li class="list_item"><a href="#">Info</a></li>
     </ul>
   </div>
 
-  <label for="">Info about our clients</label>
+  <label id="label" class="title">Company reports</label>
 
 
   <table>
@@ -49,16 +49,83 @@
     </tr>
   </table>
 
-  <blockquote id="creator">Developer Diego Soto</blockquote>
+  <blockquote id="creator" class="credits">Developer Diego Soto</blockquote>
   <p>© All rights reserved</p>
 
   <script type="text/javascript">
 
+    // Div
     $(".container").css({
-      "display": "flex",
+      "background-color": "black"
+    })
+
+    $("#id_container").css({
+      "display": "flex"
+    })
+
+    $("div").css({
       "width": "fit",
-      "background-color": "black",
       "margin-bottom": "15px"
+    })
+
+    // Li
+    $("#home").css({
+      "gap": "1px"
+    })
+
+    $(".list_item").css({
+      "font-style": "normal",
+    })
+
+    $("li").css({
+      "width": "fit",
+    })
+
+    // Label
+    $("label").css({
+      "font-style": "italic",
+    })
+
+    $("#label").css({
+      "font-color": "black",
+    })
+    $(".title").css({
+      "font-size": "20px",
+    })
+
+    // Blackquote
+    $("blockquote").css({
+      "font-style": "italic",
+    })
+
+    $("#creator").css({
+      "font-color": "black",
+    })
+
+    $(".credits").css({
+      "font-size": "20px",
+    })
+
+    // Table
+    $("table").css({
+      "border-collapse": "collapse",
+      "width": "100 %",
+      "margin-top": "10px"
+    })
+
+    $("td").css({
+      "border": "10px solid #DDDDDDD"
+    })
+
+    $(".td").css({
+      "text-align": "left",
+      "padding": "8px"
+    })
+
+    $(".th").css({
+      "border": "10px",
+      "text-align": "left",
+      "padding": "8px"
     })
 
     $("ul").css({
@@ -71,40 +138,15 @@
     $("a").css({
       "text-decoration": "none",
     })
+
+    // Parte 2
     $("a:odd").css({
       "color": "white"
-    })
-
-    $("label").css({
-      "font-style": "italic",
-    })
-
-    $("#creator").css({
-      "font-style": "italic"
-    })
-
-    $("table").css({
-      "border-collapse": "collapse",
-      "width": "100 %",
-      "margin-top": "10px"
-    })
-
-    $("td").css({
-      "border": "10px solid #DDDDDDD",
-      "text-align": "left",
-      "padding": "8px"
-    })
-
-    $("th").css({
-      "border": "10px",
-      "text-align": "left",
-      "padding": "8px"
     })
 
     $("tr:even").css({
       "background-color": "#dddddd",
     })
-
 
   </script>
 
