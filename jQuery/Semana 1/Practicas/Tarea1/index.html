@@ -26,7 +26,7 @@
   <label id="label" class="title">Company reports</label>
 
 
-  <table>
+  <table id="table" class="table">
     <tr>
       <th class="th">Company</th>
       <th class="th">Contact</th>
@@ -50,7 +50,7 @@
   </table>
 
   <blockquote id="creator" class="credits">Developer Diego Soto</blockquote>
-  <p>© All rights reserved</p>
+  <p class="copyright" id="rights">© All rights reserved</p>
 
   <script type="text/javascript">
 
@@ -58,11 +58,9 @@
     $(".container").css({
       "background-color": "black"
     })
-
     $("#id_container").css({
       "display": "flex"
     })
-
     $("div").css({
       "width": "fit",
       "margin-bottom": "15px"
@@ -72,11 +70,9 @@
     $("#home").css({
       "gap": "1px"
     })
-
     $(".list_item").css({
       "font-style": "normal",
     })
-
     $("li").css({
       "width": "fit",
     })
@@ -85,7 +81,6 @@
     $("label").css({
       "font-style": "italic",
     })
-
     $("#label").css({
       "font-color": "black",
     })
@@ -97,20 +92,33 @@
     $("blockquote").css({
       "font-style": "italic",
     })
-
     $("#creator").css({
       "font-color": "black",
     })
-
     $(".credits").css({
       "font-size": "20px",
     })
 
+    // P
+    $("blockquote").css({
+      "font-style": "bold",
+    })
+    $("#rights").css({
+      "font-color": "black",
+    })
+    $(".copyright").css({
+      "font-size": "15px",
+    })
+
     // Table
     $("table").css({
-      "border-collapse": "collapse",
-      "width": "100 %",
+      "border-collapse": "collapse"
+    })
+    $(".table").css({
       "margin-top": "10px"
+    })
+    $("#table").css({
+      "width": "100 %"
     })
 
     $("td").css({
