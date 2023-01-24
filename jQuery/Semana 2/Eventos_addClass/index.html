@@ -8,24 +8,39 @@
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
+
+  <style>
+    .error {
+      outline: red solid 1px;
+    }
+  </style>
+
 </head>
 
 
 <body>
-  <p id="parrafo">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non totam nemo saepe quisquam illo quidem inventore
-    aspernatur facilis, iure, maxime quos laudantium tempora, facere ipsam adipisci nostrum sequi exercitationem
-    ratione.
-  </p>
+
+  <form>
+
+    <input type="text" name="" id="campo">
+    <input type="text" name="" id="campoDos">
+
+  </form>
 
 
 
   <script type="text/javascript">
-    $("#parrafo").css({
-      "background": "black",
-      "color": "white"
-    });
+
+    $("#campo").blur(function () {
+      if (!$(this).val()) { //si el campo no está vacio
+        $(this).addClass("error");
+      } else {
+        $(this).removeClass("error");
+      }
+    })
+
   </script>
+
 
 </body>
 

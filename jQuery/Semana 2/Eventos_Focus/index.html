@@ -8,37 +8,24 @@
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
-
-  <style>
-    .error {
-      outline: red solid 1px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 
 <body>
 
-  <form>
 
+  <form action="">
     <input type="text" name="" id="campo">
-    <input type="text" name="" id="campoDos">
-
+    <input type="text" name="">
   </form>
 
-
-
   <script type="text/javascript">
-
-    $("#campo").blur(function () {
-      if (!$(this).val()) { //si el campo no está vacio
-        $(this).addClass("error");
-      } else {
-        $(this).removeClass("error");
-      }
+    $("#campo").focus(() => {
+      $("input").next().css("display", "inline").fadeOut(2000);
     })
-
   </script>
 
 
