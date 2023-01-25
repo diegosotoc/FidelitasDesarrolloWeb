@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<body>
+
+  <form id="formulario" action="">
+
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="name" placeholder="Nombre">
+
+    <label for="">Apellido</label>
+    <input type="text" name="" id="lastname" placeholder="Apellido">
+
+    <label for="">Email</label>
+    <input type="email" name="" id="email" placeholder="e-mail">
+
+    <label for="">Telefono</label>
+    <input type="number" name="" id="phone" placeholder="Telefono">
+
+    <label for="">Direccion</label>
+    <input type="text" name="" id="dir" placeholder="Direccion">
+
+    <button type="button" id="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+
+
+
+  <script type="text/javascript">
+
+    $("input").blur(function () {
+      if (!$(this).val()) { //Si el campo no esta vacio
+        $(this).addClass("error");
+      } else {
+        $(this).removeClass("error");
+        $(this).addClass("correcto");
+      }
+    })
+
+    $("#email").blur(function () {
+      if (!$(this).val()) { //Si el campo no esta vacio
+        $(this).addClass("error__email");
+      } else {
+        $(this).removeClass("error__email");
+        $(this).removeClass("error");
+        $(this).addClass("correcto");
+      }
+    })
+
+    $("#submit").click(() => {
+      // Se agarran los valores
+      var name = $("#name").val();
+      var lastname = $("#lastname").val();
+      var email = $("#email").val();
+      var phone = $("#phone").val();
+      var dir = $("#dir").val();
+
+      var fill = '';
+
+      if (name == '' || lastname == '' || email == '' || phone == '' || dir == '') {
+
+
+        if (name == '') {
+          fill += "Nombre"
+        }
+        if (lastname == '') {
+          fill += "Apellido"
+        }
+        if (email == '') {
+          fill += "E-Mail"
+        }
+        if (phone == '') {
+          fill += "Teléfono "
+        }
+        if (dir == '') {
+          fill += "Dirección "
+        }
+
+        swal({
+          title: "Ooops, no se ha llenado el formulario",
+          text: "Favor llenar lo siguente: " + fill,
+          icon: "warning",
+        });
+        event.preventDefault();
+
+      } else {
+        swal({
+          title: "Formulario enviado",
+          icon: "success",
+        });
+        event.preventDefault();
+      }
+    })
+  </script>
+
+</body>
+
+</html>
