@@ -1,0 +1,26 @@
+.error {
+  border: red solid 2px;
+  border-radius: 5px;
+}
+
+.correcto {
+  border: greenyellow solid 2px;
+  border-radius: 5px;
+}
+
+.error__email {
+  border: red dashed 2px !important;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 40px;
+}
+
+button {
+  margin-top: 15px;
+}
