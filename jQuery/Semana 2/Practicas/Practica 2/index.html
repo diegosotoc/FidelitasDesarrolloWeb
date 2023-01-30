@@ -37,11 +37,9 @@
 
     </div>
 
-
     <div class="div_4">
       4
     </div>
-
 
     <div class="alert alert-primary" style="display: none;" role="alert">
       Esta es la sala de reuniones
@@ -49,10 +47,8 @@
 
   </div>
 
-
-
-
   <script type="text/javascript">
+
     // Div 1
     $(".div_1").hover(() => {
       swal("Esta es el área de recreación");
@@ -66,7 +62,6 @@
       $(".alert").hide();
     });
 
-
     // Div 3
     $(".div_3").hover(() => {
       $(".div_3").hide();
@@ -75,13 +70,11 @@
     });
 
     // Div 4
-
     $(".div_4").hover(() => {
       $(".div_4").addClass("div_4_change");
     }, () => {
       $(".div_4").removeClass("div_4_change");
-    }
-    );
+    });
 
   </script>
 
