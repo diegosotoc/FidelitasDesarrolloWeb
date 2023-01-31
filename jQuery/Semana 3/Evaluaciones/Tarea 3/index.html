@@ -38,6 +38,7 @@
     </div>
 
     <h3>Barra de progreso y un tooltip</h3>
+
     <div class="">
 
       <div id="progressbar">
@@ -50,12 +51,13 @@
         Parate sobre mi para ver el progreso
       </button>
 
-
-
     </div>
 
     <h3>Autocopmpletado10 generos musicales</h3>
-    <div>Second content panel</div>
+    <div>
+
+      <input id="autocomplete" type="text">
+    </div>
 
 
   </div>
@@ -101,13 +103,10 @@
       }
     });
 
-
-
-
-
-
-
-
+    // Parte 3
+    $("#autocomplete").autocomplete({
+      source: ["Rock", "Jazz", "Metal", "Latino", "Rap", "Lo-Fi", "Trap", "New Wave", "Góspel", "Soul"]
+    })
   </script>
 
 </body>
