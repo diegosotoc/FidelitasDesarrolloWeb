@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+    integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/le-frog/jquery-ui.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+
+<body>
+  <!-- Parte 1 -->
+  <input id="spinner" name="">
+  <div id="progressbar"></div>
+
+  <!-- Parte 2 -->
+  <div id="tabs">
+
+    <ul>
+      <li><a href="#tab1"> TAB1</a></li>
+      <li><a href="#tab2"> TAB2</a></li>
+      <li><a href="#tab3"> TAB3</a></li>
+    </ul>
+
+    <div id="tab1">
+      <h2>Video 1</h2>
+      Learn JavaScript from scratch by solving over a hundred different coding challenges.
+      <iframe src="https://www.youtube.com/embed/jS4aFq5-91M" width="560" height="315" frameborder="0"></iframe>
+
+    </div>
+
+    <div id="tab2">
+      <h2>Video 2</h2>
+      Master the HTTP networking protocol by completing over 80 coding exercises and quizzes in JavaScript.
+
+      <iframe src="https://www.youtube.com/embed/2JYT5f2isg4" width="560" height="315" frameborder="0"></iframe>
+    </div>
+
+    <div id="tab3">
+      <h2>Video 3</h2>
+      Learn full-stack web development in this full course for beginners. First, you will learn the basics of HTML, CSS,
+      and JavaScript.
+      <iframe src="https://www.youtube.com/embed/nu_pCVPKzTk" width="560" height="315" frameborder="0"></iframe>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    // Primera parte
+    $("#spinner").spinner({
+      step: 1,
+      min: 1,
+      max: 100
+    });
+
+    var valor;
+    $("#progressbar").progressbar({
+      value: valor
+    });
+
+    $("#spinner").spinner({
+      spin: (event, ui) => {
+        valor = $("#spinner").spinner("value");
+
+        $("#progressbar").progressbar({
+          value: valor
+        });
+
+        if (valor === 100) {
+          swal("La barra ha llegado a un 100%!");
+        }
+      }
+    });
+
+    // Parte 2
+    $("#tabs").tabs();
+  </script>
+
+</body>
+
+</html>
