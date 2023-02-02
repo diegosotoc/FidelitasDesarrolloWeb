@@ -23,22 +23,19 @@
 
 <body>
 
-  <h3 id="mensajeCierre"></h3>
-  <input id="campo" title="Agregar su nombre" type="" name="">
+  <div id="datepicker">
 
-
-  </input>
+  </div>
 
   <script type="text/javascript">
-    // Basicamente muestra el que tengo que hacer, como texto de ayuda o placeholder
-    $("#campo").tooltip({
-      close: (event, ui) => {
-        $("#mensajeCierre").html("Se ha cerrado el tooltip")
-      },
-      open: (event, ui) => {
-        $("#mensajeCierre").html("")
-      }
-    });
+
+    $(function () {
+      $("#datepicker").datepicker({
+        onSelect: (date) => {
+          alert(date)
+        }
+      });
+    })
 
   </script>
 

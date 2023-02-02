@@ -12,72 +12,103 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 
 <body>
 
-  <div id="container">
+  <form id="formulario" action="">
 
-    <div id="container_2">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="name" placeholder="Nombre">
 
-      <div class="div_1">
-        1
-      </div>
+    <label for="">Apellido</label>
+    <input type="text" name="" id="lastname" placeholder="Apellido">
 
-      <div id="container_3">
-        <div class="div_2">
-          2
-        </div>
-        <div class="div_3">
-          3
-        </div>
-      </div>
+    <label for="">Email</label>
+    <input type="email" name="" id="email" placeholder="e-mail">
 
-    </div>
+    <label for="">Telefono</label>
+    <input type="number" name="" id="phone" placeholder="Telefono">
 
-    <div class="div_4">
-      4
-    </div>
+    <label for="">Direccion</label>
+    <input type="text" name="" id="dir" placeholder="Direccion">
 
-    <div class="alert alert-primary" style="display: none;" role="alert">
-      Esta es la sala de reuniones
-    </div>
+    <button type="button" id="submit" class="btn btn-primary">Enviar</button>
+  </form>
 
-  </div>
+
+
 
   <script type="text/javascript">
 
-    // Div 1
-    $(".div_1").hover(() => {
-      swal("Esta es el área de recreación");
-    });
+    $("input").blur(function () {
+      if (!$(this).val()) { //Si el campo no esta vacio
+        $(this).addClass("error");
+      } else {
+        $(this).removeClass("error");
+        $(this).addClass("correcto");
+      }
+    })
 
-    // Div 2
-    $(".div_2").hover(() => {
-      $(".alert").show();
+    $("#email").blur(function () {
+      if (!$(this).val()) { //Si el campo no esta vacio
+        $(this).addClass("error__email");
+      } else {
+        $(this).removeClass("error__email");
+        $(this).removeClass("error");
+        $(this).addClass("correcto");
+      }
+    })
 
-    }, () => {
-      $(".alert").hide();
-    });
+    $("#submit").click(() => {
+      // Se agarran los valores
+      var name = $("#name").val();
+      var lastname = $("#lastname").val();
+      var email = $("#email").val();
+      var phone = $("#phone").val();
+      var dir = $("#dir").val();
 
-    // Div 3
-    $(".div_3").hover(() => {
-      $(".div_3").hide();
-    }, () => {
-      $(".div_3").show();
-    });
+      var fill = '';
 
-    // Div 4
-    $(".div_4").hover(() => {
-      $(".div_4").addClass("div_4_change");
-    }, () => {
-      $(".div_4").removeClass("div_4_change");
-    });
+      if (name == '' || lastname == '' || email == '' || phone == '' || dir == '') {
 
+
+        if (name == '') {
+          fill += "Nombre"
+        }
+        if (lastname == '') {
+          fill += "Apellido"
+        }
+        if (email == '') {
+          fill += "E-Mail"
+        }
+        if (phone == '') {
+          fill += "Teléfono "
+        }
+        if (dir == '') {
+          fill += "Dirección "
+        }
+
+        swal({
+          title: "Ooops, no se ha llenado el formulario",
+          text: "Favor llenar lo siguente: " + fill,
+          icon: "warning",
+        });
+        event.preventDefault();
+
+      } else {
+        swal({
+          title: "Formulario enviado",
+          icon: "success",
+        });
+        event.preventDefault();
+      }
+    })
   </script>
-
 
 </body>
 
