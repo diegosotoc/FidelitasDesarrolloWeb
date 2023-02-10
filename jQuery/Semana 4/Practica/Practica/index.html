@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+  <style>
+    img {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+  </style>
+
+
+</head>
+
+
+<body>
+  <button id="Retroceder">Retroceder</button>
+  <button id="Avanzar">Avanzar</button>
+  <br>
+  <img src="./tortuga.png" alt="">
+
+
+  <script type="text/javascript">
+
+    // Vamos a trabajar con efectos, hace tiempo existía un programa llamado Micromundos, el n
+    // cual servía para aprender conceptos básicos de programación en la escuela, lo que 
+    // haremos ahora es simular un ejercicio donde está la icónica tortuga de Micromundos en el
+    // centro y con unos botones esta avanza o retrocede en la pantalla, la condición es que cada 
+    // vez que avanza esta crece un 10% y se desplaza 20px y lo mismo para cuando debe 
+    // retroceder (hacerse más pequeña un 10% y regresar 20px)
+
+    var pesoActual = 220;
+    var pesoSumar = 220;
+
+    $("#Avanzar").click(function () {
+      $("img").animate({
+        width: "+=10%",
+        height: "+=10%",
+        left: "+=20"
+      })
+    });
+
+    $("#Retroceder").click(function () {
+      $("img").animate({
+        width: "-=10%",
+        height: "-=10%",
+        right: "+=20"
+      })
+    });
+
+  </script>
+
+</body>
+
+</html>
