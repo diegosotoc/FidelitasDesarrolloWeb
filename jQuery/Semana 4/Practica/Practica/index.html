@@ -19,6 +19,16 @@
       height: 200px;
       position: relative;
     }
+
+    .container img {
+      margin-top: 40px;
+      width: 15%;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+      position: relative;
+
+      filter: drop-shadow(0px 60px 40px #000000);
+    }
   </style>
 
 
@@ -26,21 +36,23 @@
 
 
 <body>
+  <h3>Parte 1</h3>
   <button id="Retroceder">Retroceder</button>
   <button id="Avanzar">Avanzar</button>
   <br>
   <img src="./tortuga.png" alt="">
+  <br>
 
+  <h3>Parte 2</h3>
+  <div class="container">
+    <img class="basket" src="./basket.png" alt="">
+    <img class="futbol" src="./futbol.png" alt="">
+    <img class="volley" src="./volleyball.png" alt="">
+    <img class="tenis" src="./tenis.png" alt="">
+  </div>
 
   <script type="text/javascript">
-
-    // Vamos a trabajar con efectos, hace tiempo existía un programa llamado Micromundos, el n
-    // cual servía para aprender conceptos básicos de programación en la escuela, lo que 
-    // haremos ahora es simular un ejercicio donde está la icónica tortuga de Micromundos en el
-    // centro y con unos botones esta avanza o retrocede en la pantalla, la condición es que cada 
-    // vez que avanza esta crece un 10% y se desplaza 20px y lo mismo para cuando debe 
-    // retroceder (hacerse más pequeña un 10% y regresar 20px)
-
+    // Parte 1
     var pesoActual = 220;
     var pesoSumar = 220;
 
@@ -59,6 +71,15 @@
         right: "+=20"
       })
     });
+
+
+    // Parte 2
+    $("img").click(function () {
+      $(".basket").animate({ "top": "+=100px" }, 1000, "easeOutBounce");
+      $(".futbol").animate({ "top": "+=100px" }, 700, "easeOutBounce");
+      $(".volley").animate({ "top": "+=100px" }, 700, "easeOutBounce");
+      $(".tenis").animate({ "top": "+=100px" }, 1200, "easeOutBounce");
+    })
 
   </script>
 
