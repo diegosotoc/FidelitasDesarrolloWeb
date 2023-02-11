@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+
+  <style>
+    .container img {
+      margin-top: 40px;
+      width: 15%;
+      aspect-ratio: 3/2;
+      object-fit: contain;
+      position: relative;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <img class="basket" src="./basket.png" alt="">
+    <img class="futbol" src="./futbol.png" alt="">
+    <img class="volley" src="./volleyball.png" alt="">
+    <img class="tenis" src="./tenis.png" alt="">
+  </div>
+
+  <script type="text/javascript">
+
+    $("img").click(function () {
+      $(".basket").animate({ "top": "+=100px" }, 1000, "easeOutBounce");
+      $(".futbol").animate({ "top": "+=100px" }, 700, "easeOutBounce");
+      $(".volley").animate({ "top": "+=100px" }, 700, "easeOutBounce");
+      $(".tenis").animate({ "top": "+=100px" }, 1200, "easeOutBounce");
+    })
+  </script>
+
+
+</body>
+
+</html>
