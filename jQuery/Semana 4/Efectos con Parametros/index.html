@@ -10,38 +10,25 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-
-  <style>
-    div {
-      width: 40px;
-      height: 150px;
-      float: left;
-      margin: 20;
-      background-color: red;
-      position: relative;
-      display: none;
-    }
-  </style>
-
 
 </head>
 
 
 <body>
-
-  <button id="ejecutar">ejecutar</button>
-  <br>
-  <div></div>
-  <div></div>
-  <div></div>
-
-
-
+  <div id="container">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus magni corporis, aliquid
+    doloribus maxime placeat nihil. Ea, hic. Labore ab sit deserunt quo, fugiat possimus
+    enim odit atque distinctio ipsa.
+  </div>
   <script type="text/javascript">
-    $("#ejecutar").click(function () {
-      $("div").slideDown(3000, "easeInSine");
+
+
+    $("#container").click(function () {
+      $(this).hide(5000);
+    });
+
+    $("#container").click(function () {
+      $(this).show(5000);
     });
 
 
