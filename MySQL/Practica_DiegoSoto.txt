@@ -1,0 +1,90 @@
+CREATE TABLE Cliente(
+    RecordId int not null AUTO_INCREMENT,
+    Nombre varchar(30), 
+    Apellido varchar(100),
+    Direccion varchar (100),  
+    PRIMARY KEY (RecordId)
+);
+
+CREATE TABLE Ordenes(
+    OrdenId int not null AUTO_INCREMENT,
+    ClienteId int(30), 
+    LibroId varchar(100),
+    Fecha_Orden datetime,
+    PRIMARY KEY (OrdenId)
+);
+
+# Debido a un error en ClienteId, tengo que cambiar el tipo de dato
+ALTER TABLE `ordenes` CHANGE `ClienteId` `ClienteId` INT NULL DEFAULT NULL;
+ALTER TABLE `ordenes` CHANGE `Fecha_Orden` `Fecha_Orden` DATE NULL DEFAULT NULL;
+
+
+CREATE TABLE libros(
+    LibroId int not null AUTO_INCREMENT,
+    Titulo varchar(50), 
+    Nombre_Autor varchar(100),
+    Categoria varchar(30),
+    Precio varchar(100),
+    PRIMARY KEY (LibroId)
+);
+
+# Mismo error de antes,
+ALTER TABLE `ordenes` CHANGE `LibroId` `LibroId` INT NULL DEFAULT NULL;
+
+
+
+
+# Hacer las llaves foraneas: 
+ALTER TABLE `ordenes` ADD CONSTRAINT `fk_cliente` FOREIGN KEY (`ClienteId`) REFERENCES `cliente`(`RecordId`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE `ordenes` ADD CONSTRAINT `fk_libroId` FOREIGN KEY (`LibroId`) REFERENCES `libros`(`LibroId`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+# Agregar Clientes
+
+INSERT INTO `cliente` (`RecordId`, `Nombre`, `Apellido`, `Direccion`) 
+VALUES (NULL, 'Danna', 'Quiros', 'San Ramón');
+
+INSERT INTO `cliente` (`RecordId`, `Nombre`, `Apellido`, `Direccion`) 
+VALUES (NULL, 'Marcel', 'Campos', 'Grecia');
+
+INSERT INTO `cliente` (`RecordId`, `Nombre`, `Apellido`, `Direccion`) 
+VALUES (NULL, 'Lucia', 'Batista', 'Guanacaste');
+
+INSERT INTO `cliente` (`RecordId`, `Nombre`, `Apellido`, `Direccion`) 
+VALUES (NULL, 'Luis', 'David', 'Alajuela');
+
+# Agregar libros
+
+INSERT INTO `libros` (`LibroId`, `Titulo`, `Nombre_Autor`, `Categoria`, `Precio`) VALUES (NULL, '1984', 'George Orwell', 'Ciencia Ficción', '10000');
+
+INSERT INTO `libros` (`LibroId`, `Titulo`, `Nombre_Autor`, `Categoria`, `Precio`) 
+VALUES (NULL, 'Hamlet', 'William Shakspeare', 'Romance', '10000');
+
+INSERT INTO `libros` (`LibroId`, `Titulo`, `Nombre_Autor`, `Categoria`, `Precio`) 
+VALUES (NULL, 'En busca del tiempo perdido', 'Marcel Proust', 'Literatura modernista,', '70000');
+
+INSERT INTO `libros` (`LibroId`, `Titulo`, `Nombre_Autor`, `Categoria`, `Precio`) 
+VALUES (NULL, 'Frankenstein', 'Mary Shelley', 'Ciencia Ficción', '5000');
+
+
+# Agregando Ordedenes
+
+INSERT INTO `ordenes` (`OrdenId`, `ClienteId`, `LibroId`, `Fecha_Orden`) VALUES (NULL, '1', '1', '2023-02-09');
+INSERT INTO `ordenes` (`OrdenId`, `ClienteId`, `LibroId`, `Fecha_Orden`) VALUES (NULL, '4', '2', '2023-02-08');
+INSERT INTO `ordenes` (`OrdenId`, `ClienteId`, `LibroId`, `Fecha_Orden`) VALUES (NULL, '1', '2', '2023-02-08');
+INSERT INTO `ordenes` (`OrdenId`, `ClienteId`, `LibroId`, `Fecha_Orden`) VALUES (NULL, '3', '3', '2023-02-09');
+
+
+# Eliminando un cliente 
+DELETE FROM cliente WHERE `cliente`.`RecordId` = 2"
+UPDATE `libros` SET `Titulo` = 'Aniaml Farm' WHERE `RecordId` = 1;
+
+
+ 
+
+
+
+
+
+
