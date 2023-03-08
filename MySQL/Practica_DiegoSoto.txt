@@ -80,7 +80,6 @@ INSERT INTO `ordenes` (`OrdenId`, `ClienteId`, `LibroId`, `Fecha_Orden`) VALUES 
 DELETE FROM cliente WHERE `cliente`.`RecordId` = 2"
 UPDATE `libros` SET `Titulo` = 'Aniaml Farm' WHERE `RecordId` = 1;
 
-
  
 
 
